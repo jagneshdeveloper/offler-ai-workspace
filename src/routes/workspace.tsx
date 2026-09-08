@@ -14,7 +14,7 @@ export const Route = createFileRoute("/workspace")({
       { property: "og:description", content: "Agent chat, code editor and live preview in one workspace." },
     ],
   }),
-  component: Workspace;
+  component: Workspace,
 });
 
 type Msg = { role: "user" | "agent"; text: string };
